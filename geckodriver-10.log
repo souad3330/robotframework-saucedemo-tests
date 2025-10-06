@@ -1,0 +1,18 @@
+1759317297327	geckodriver	INFO	Listening on 127.0.0.1:56913
+1759317300390	mozrunner::runner	INFO	Running command: "C:\\Users\\souad\\.cache\\selenium\\firefox\\win64\\143.0.3\\firefox.exe" "--marionette" "--remote-debuggin ... 4" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\souad\\AppData\\Local\\Temp\\rust_mozprofilefjYgCE"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1759317300721	Marionette	INFO	Marionette enabled
+1759317300799	Marionette	INFO	Listening on port 58988
+WebDriver BiDi listening on ws://127.0.0.1:56914
+Read port: 58988
+1759317300977	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new TypeError("can't access property \"get\", linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 1945))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.error: "buildList failed: " [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.error: "buildList failed: " [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.error: "buildList failed: " [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.error: "buildList failed: " [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+Exiting due to channel error.

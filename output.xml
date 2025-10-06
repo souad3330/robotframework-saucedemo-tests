@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.3 on win32)" generated="2025-10-06T11:21:43.522315" rpa="false" schemaversion="5">
+<suite id="s1" name="Test1" source="C:\Users\souad\PycharmProjects\Robot_project\tests\Test1.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-10-06T11:21:43.775881" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-06T11:21:43.775625" elapsed="9.431600"/>
+</kw>
+<test id="s1-t1" name="Buy product" line="20">
+<kw name="Successful login" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-06T11:21:53.210201" level="INFO">Typing text 'standard_user' into text field '//input[@placeholder='Username']'.</msg>
+<arg>${LOCATOR_USERNAME_LOGIN}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T11:21:53.209530" elapsed="0.185213"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-10-06T11:21:53.395402" level="INFO">Typing password into text field '//input[@placeholder='Password']'.</msg>
+<msg time="2025-10-06T11:21:53.408937" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${LOCATOR_PASSWORD_LOGIN}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T11:21:53.395052" elapsed="0.116566"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-06T11:21:53.512467" level="INFO">Clicking button '//input[@type='submit']'.</msg>
+<arg>${LOCATOR_LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T11:21:53.511946" elapsed="0.241016"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Swag Labs</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-06T11:21:53.753126" elapsed="0.003867"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-06T11:21:53.208765" elapsed="0.548356"/>
+</kw>
+<kw name="Add a product to cart" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOCATOR_PRODUCTS_PAGE_TITLE}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-06T11:21:53.757779" elapsed="0.077770"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-06T11:21:53.835904" level="INFO">Clicking button 'id=add-to-cart-sauce-labs-backpack'.</msg>
+<arg>${LOCATOR_ADD_TO_CART_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T11:21:53.835703" elapsed="0.062699"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOCATOR_REMOVE_BUTTON}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-06T11:21:53.899101" elapsed="0.033651"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:21:53.757461" elapsed="0.175569"/>
+</kw>
+<kw name="Checkout" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-06T11:21:53.935114" level="INFO">Clicking element '//a[@class='shopping_cart_link']'.</msg>
+<arg>${LOCATOR_SHOPPING_CART_ICON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T11:21:53.934679" elapsed="0.090108"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOCATOR_YOUR_CART_PAGE_TITLE}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-06T11:21:54.025109" elapsed="0.016955"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-06T11:21:54.042852" level="INFO">Clicking element 'name=checkout'.</msg>
+<arg>${LOCATOR_CHECKOUT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T11:21:54.042410" elapsed="0.093979"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOCATOR_CHECKOUT_PAGE_TITLE}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-06T11:21:54.136557" elapsed="0.007526"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-06T11:21:54.144445" level="INFO">Typing text 'test' into text field 'id=first-name'.</msg>
+<arg>${LOCATOR_FIRSTNAME_CHECKOUT}</arg>
+<arg>${FIRSTNAME_CHECKOUT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T11:21:54.144223" elapsed="0.024688"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-06T11:21:54.169344" level="INFO">Typing text 'test' into text field '//*[@id="last-name"]'.</msg>
+<arg>${LOCATOR_LAST_NAME_CHECKOUT}</arg>
+<arg>${LASTNAME_CHECKOUT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T11:21:54.169086" elapsed="0.022872"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-06T11:21:54.192340" level="INFO">Typing text '1223' into text field '//*[@id="postal-code"]'.</msg>
+<arg>${LOCATOR_POSTALCODE_CHECKOUT}</arg>
+<arg>${POSTALCODE_CHECKOUT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T11:21:54.192119" elapsed="0.020695"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-06T11:21:54.213375" level="INFO">Clicking element 'name=continue'.</msg>
+<arg>${LOCATOR_CONTINUE_BUTTON_CHECKOUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T11:21:54.213050" elapsed="0.082351"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Checkout: Overview</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-06T11:21:54.295740" elapsed="0.004317"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-06T11:21:54.300796" level="INFO">Clicking element '//button[@class='btn btn_action btn_medium cart_button']'.</msg>
+<arg>${LOCATOR_FINISH_CHECKOUT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-06T11:21:54.300376" elapsed="0.085803"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOCATOR_ORDER_COMPLETE_PAGE_TITLE}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-06T11:21:54.386444" elapsed="0.012429"/>
+</kw>
+<arg>${FIRSTNAME_CHECKOUT}</arg>
+<arg>${LASTNAME_CHECKOUT}</arg>
+<arg>${POSTALCODE_CHECKOUT}</arg>
+<status status="PASS" start="2025-10-06T11:21:53.933811" elapsed="0.465257"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:21:53.207616" elapsed="1.191899"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-06T11:21:54.400767" elapsed="3.149644"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:21:43.523785" elapsed="14.026714"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test1" id="s1" pass="1" fail="0" skip="0">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

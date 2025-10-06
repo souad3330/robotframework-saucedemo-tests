@@ -1,0 +1,21 @@
+1759317043677	geckodriver	INFO	Listening on 127.0.0.1:55604
+1759317046756	mozrunner::runner	INFO	Running command: "C:\\Users\\souad\\.cache\\selenium\\firefox\\win64\\143.0.3\\firefox.exe" "--marionette" "--remote-debuggin ... 5" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\souad\\AppData\\Local\\Temp\\rust_mozprofileiANxhK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1759317047080	Marionette	INFO	Marionette enabled
+1759317047157	Marionette	INFO	Listening on port 55559
+Read port: 55559
+WebDriver BiDi listening on ws://127.0.0.1:55605
+1759317047224	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.error: "buildList failed: " [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.error: "buildList failed: " [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.error: "buildList failed: " [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.error: "buildList failed: " [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.error: "buildList failed: " [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
